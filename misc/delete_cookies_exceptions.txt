@@ -1,0 +1,4 @@
+github.com
+www.startpage.com
+discord.com
+teams.microsoft.com
