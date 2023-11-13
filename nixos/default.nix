@@ -17,22 +17,9 @@
       ./nvidia.nix
       ./polkit.nix
       ./printer.nix
+      ./users.nix
       ./weird_apps.nix
     ];
-
-  environment.etc."machine-id".source = "/nix/persist/etc/machine-id";
-
-  users.mutableUsers = false;
-  users.users.jirka = {
-    initialHashedPassword = "$6$9S9qnOWcrUwILNTR$ZVWu7N7vDkAlmz2IddjE1QnTTNk5H65sLfoOX5qlSlNlwJ228Xvc3uNKg051RxbwWUs/IDVnKDIe8YaWuQ4u9/";
-
-    isNormalUser = true;
-    description = "Jirka";
-    extraGroups = [ "networkmanager" "wheel" ];
-
-    shell = pkgs.fish;
-  };
-  users.users.root.initialHashedPassword = "$6$LxCWxAlrWNMoSutT$NzuJRDwQpvNHuEmL.Sy7UK58uztTzLpXXZxGgOo3uDD9QrjrLMb7Q5hj8i51T2aE6tJj4unxBkwLnzGwSaTZ/0";
 
   security = {
     sudo.enable = false;
@@ -52,8 +39,6 @@
     defaultPackages = [ ];
 
     systemPackages = with pkgs; [
-      vim
-
       llvmPackages.bintools
       lshw
       rsync

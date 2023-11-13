@@ -15,10 +15,12 @@
     ./wm/polybar.nix
   ];
 
+  home = {
+    username = "jirka";
+    homeDirectory = "/home/jirka";
+    stateVersion = "23.11";
+  };
   programs.home-manager.enable = true;
-  home.username = "jirka";
-  home.homeDirectory = "/home/jirka";
-  home.stateVersion = "23.11";
 
   services.network-manager-applet.enable = true;
 
