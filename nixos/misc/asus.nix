@@ -15,13 +15,11 @@
           disable_nvidia_powerd_on_battery: false,
           ac_command: "",
           bat_command: "",
-      )
-    '';
+      )'';
     profileConfig = ''
       (
           active_profile: Performance,
-      )
-    '';
+      )'';
   };
 
   # programs.rog-control-center = {
