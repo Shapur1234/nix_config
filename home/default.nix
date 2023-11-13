@@ -5,12 +5,13 @@
     ./app/btop.nix
     ./app/fish.nix
     ./app/git.nix
+    ./app/gitui.nix
     ./app/helix.nix
-    ./app/lazygit.nix
     ./app/lf.nix
     ./app/librewolf.nix
     ./app/rofi.nix
     ./misc/thunar.nix
+    ./wm/gtk.nix
     ./wm/i3.nix
     ./wm/polybar.nix
   ];

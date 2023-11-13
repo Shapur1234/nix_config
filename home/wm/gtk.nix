@@ -1,6 +1,8 @@
 { pkgs, ... }:
 {
-  home.packages = with pkgs; [ nerdfonts ];
+  home.packages = with pkgs; [
+    nerdfonts
+  ];
 
 
   fonts.fontconfig.enable = true;
