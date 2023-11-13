@@ -31,13 +31,9 @@
     speedcrunch
     vlc
 
-    clang
-    gcc
-
     cargo
     cargo-flamegraph
     clippy
-    rustc
 
     python3
 
