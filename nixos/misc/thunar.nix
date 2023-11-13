@@ -1,5 +1,10 @@
 { pkgs, ... }:
 {
+  services = {
+    gvfs.enable = true;
+    tumbler.enable = true;
+  };
+
   programs.thunar = {
     enable = true;
 

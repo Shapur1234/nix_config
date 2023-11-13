@@ -1,5 +1,23 @@
 { pkgs, ... }:
 {
+  home.packages = with pkgs; [
+    xclip
+
+    black
+    ltex-ls
+    marksman
+    nil
+    nixpkgs-fmt
+    nodePackages.bash-language-server
+    nodePackages_latest.pyright
+    nodePackages.prettier
+    nodePackages.yaml-language-server
+    rust-analyzer
+    rustfmt
+    shfmt
+    taplo
+  ];
+
   programs.helix = {
     enable = true;
 
@@ -55,7 +73,7 @@
           name = "python";
           auto-format = true;
           formatter = { command = "${pkgs.black}/bin/black"; args = [ "--quiet" "-" ]; };
-        #   language-server = { command = "pyright-langserver"; args = [ "--stdio" ]; };
+          #   language-server = { command = "pyright-langserver"; args = [ "--stdio" ]; };
         }
         {
           name = "typescript";
@@ -71,21 +89,4 @@
     };
 
   };
-
-  home.packages = with pkgs; [
-    black
-    ltex-ls
-    marksman
-    nil
-    nixpkgs-fmt
-    nodePackages.bash-language-server
-    nodePackages_latest.pyright
-    nodePackages.prettier
-    nodePackages.yaml-language-server
-    rust-analyzer
-    rustfmt
-    shfmt
-    taplo
-  ];
 }
-

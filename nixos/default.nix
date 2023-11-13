@@ -1,25 +1,27 @@
-{ pkgs, ... }:
 {
+  imports =
+    [
+      ./hardware-configuration.nix
+      ./misc/asus.nix
+      ./misc/audio.nix
+      ./misc/boot.nix
+      ./misc/impermanence.nix
+      ./misc/locale.nix
+      ./misc/network.nix
+      ./misc/nvidia.nix
+      ./misc/polkit.nix
+      ./misc/printer.nix
+      ./misc/thunar.nix
+      ./misc/users.nix
+      ./misc/x11.nix
+    ];
+
   nix.settings = {
     experimental-features = [ "nix-command" "flakes" ];
     auto-optimise-store = true;
   };
-
-  imports =
-    [
-      ./asus.nix
-      ./audio.nix
-      ./boot.nix
-      ./hardware-configuration.nix
-      ./impermanence.nix
-      ./locale.nix
-      ./network.nix
-      ./nvidia.nix
-      ./polkit.nix
-      ./printer.nix
-      ./users.nix
-      ./weird_apps.nix
-    ];
+  nixpkgs.config.allowUnfree = true;
+  system.stateVersion = "23.11";
 
   security = {
     sudo.enable = false;
@@ -34,25 +36,6 @@
     };
   };
 
-  nixpkgs.config.allowUnfree = true;
-  environment = {
-    defaultPackages = [ ];
-
-    systemPackages = with pkgs; [
-      llvmPackages.bintools
-      lshw
-      rsync
-      strace
-      wget
-
-      cargo
-      clang
-      gcc
-      python3
-      rustc
-    ];
-  };
-
   programs = {
     vim.defaultEditor = true;
 
@@ -60,32 +43,4 @@
     fish.enable = true;
     dconf.enable = true;
   };
-
-  services = {
-    gvfs.enable = true;
-
-    xserver = {
-      enable = true;
-
-      excludePackages = with pkgs; [ xterm ];
-
-      dpi = 90;
-
-      desktopManager = {
-        xterm.enable = false;
-        wallpaper = {
-          combineScreens = false;
-          mode = "fill";
-        };
-      };
-
-      displayManager = {
-        defaultSession = "none+i3";
-      };
-
-      windowManager.i3.enable = true;
-    };
-  };
-
-  system.stateVersion = "23.11";
 }

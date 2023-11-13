@@ -1,7 +1,15 @@
+{ pkgs, ... }:
 let
   mod = "Mod4";
 in
 {
+  home.packages = with pkgs; [
+    arandr
+    brightnessctl
+    feh
+    gnome.gnome-screenshot
+  ];
+
   xsession = {
     numlock.enable = true;
 
