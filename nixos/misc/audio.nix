@@ -1,8 +1,10 @@
+{ pkgs, ... }:
 {
-  nixpkgs.config.pulseaudio = true;
+  environment.systemPackages = with pkgs; [ pulseaudio ];
 
-  hardware.pulseaudio = {
+  security.rtkit.enable = true;
+  services.pipewire = {
     enable = true;
-    extraConfig = "load-module module-combine-sink";
+    pulse.enable = true;
   };
 }

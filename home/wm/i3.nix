@@ -39,10 +39,14 @@ in
             notification = false;
           }
           {
-            command = "rog-control-center";
-            always = false;
+            command = "wpctl set-default 54";
             notification = false;
           }
+          # {
+          #   command = "rog-control-center";
+          #   always = false;
+          #   notification = false;
+          # }
         ];
 
         fonts = {

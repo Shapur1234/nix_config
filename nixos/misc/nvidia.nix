@@ -1,11 +1,19 @@
-{ lib, ... }:
+{ config, pkgs, lib, ... }:
 {
+  boot = lib.mkIf config.services.tlp.enable {
+    kernelModules = [ "acpi_call" ];
+    extraModulePackages = with config.boot.kernelPackages; [ acpi_call ];
+  };
+
   hardware.opengl = {
     enable = true;
     driSupport = true;
     driSupport32Bit = true;
-  };
 
+    extraPackages = with pkgs; [
+      vaapiVdpau
+    ];
+  };
 
   services.xserver.videoDrivers = [ "nvidia" ];
 
