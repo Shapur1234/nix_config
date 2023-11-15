@@ -32,7 +32,7 @@
           height = 35;
           radius = 0;
           fixed-center = true;
-          monitor = ''''${env:MONITOR:}'';
+          monitor = "\${env:MONITOR}";
 
           background = colors.bg;
           foreground = colors.fg;
