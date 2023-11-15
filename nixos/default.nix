@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   imports =
     [
@@ -22,6 +23,12 @@
   };
   nixpkgs.config.allowUnfree = true;
   system.stateVersion = "23.11";
+
+  environment.systemPackages = with pkgs; [
+    unrar
+    unzip
+    zip
+  ];
 
   security = {
     sudo.enable = false;

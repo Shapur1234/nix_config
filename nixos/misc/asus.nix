@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  environment.systemPackages = with pkgs; [ asusctl ];
+  # environment.systemPackages = with pkgs; [ asusctl ];
 
   services.supergfxd.enable = true;
   services.asusd = {

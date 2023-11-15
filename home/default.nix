@@ -31,17 +31,6 @@
     popsicle
     speedcrunch
     vlc
-
-    cargo
-    cargo-flamegraph
-    clippy
-
-    python3
-
-    gdb
-    llvmPackages.bintools
-    unzip
-    zip
   ];
 
   home = {
