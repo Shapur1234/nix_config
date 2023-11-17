@@ -26,6 +26,11 @@
   services.network-manager-applet.enable = true;
 
   home.packages = with pkgs; [
+    cargo
+    rustc
+
+    python3
+
     libreoffice
     pinta
     popsicle
