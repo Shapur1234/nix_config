@@ -10,6 +10,7 @@
     ./app/lf.nix
     ./app/librewolf.nix
     ./app/rofi.nix
+    ./app/yazi.nix
     ./misc/thunar.nix
     ./wm/gtk.nix
     ./wm/i3.nix
