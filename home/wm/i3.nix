@@ -180,11 +180,11 @@ in
       };
 
       extraConfig = ''
-        workspace "1" output DP-2
-        workspace "2" output DP-2
-        workspace "3" output DP-2
-        workspace "4" output DP-2
-        workspace "5" output DP-2
+        workspace "1" output eDP-1-0
+        workspace "2" output eDP-1-0
+        workspace "3" output eDP-1-0
+        workspace "4" output eDP-1-0
+        workspace "5" output eDP-1-0
         workspace "6" output DP-0.2
         workspace "7" output DP-0.2
         workspace "8" output DP-0.2
