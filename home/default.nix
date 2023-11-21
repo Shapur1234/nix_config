@@ -7,7 +7,7 @@
     ./app/git.nix
     ./app/gitui.nix
     ./app/helix.nix
-    ./app/lf.nix
+    # ./app/lf.nix
     ./app/librewolf.nix
     ./app/rofi.nix
     ./app/yazi.nix
@@ -29,8 +29,9 @@
   home.packages = with pkgs; [
     cargo
     rustc
-
     python3
+
+    neofetch
 
     libreoffice
     pinta

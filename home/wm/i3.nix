@@ -19,7 +19,7 @@ in
       config = {
         startup = [
           {
-            command = "xrandr --output DP-0.2 --primary --mode 2560x1440 --pos 1920x0 --rotate normal --output DP-0 --off --output DP-1 --off --output HDMI-0 --off --output DP-2 --mode 1920x1080 --pos 0x360 --rotate normal";
+            command = "xrandr --output DP-0.2 --primary --mode 2560x1440 --pos 1920x0 --rotate normal --output DP-0 --off --output DP-1 --off --output HDMI-0 --off --output DP-2 --off --output eDP-1-0 --mode 1920x1080 --pos 0x360 --rotate normal --output DisplayPort-1-1 --off --output DisplayPort-1-2 --off --output DisplayPort-1-3 --off --output DisplayPort-1-4 --off --output DisplayPort-1-5 --off --output DisplayPort-1-6 --off --output DisplayPort-1-7 --off --output DisplayPort-1-8 --off";
             always = true;
             notification = false;
           }
@@ -167,7 +167,7 @@ in
 
           "${mod}+d" = "exec rofi -show drun";
           "${mod}+Return" = "exec alacritty";
-          "${mod}+Shift+E" = "exec alacritty -e lf";
+          "${mod}+Shift+E" = "exec alacritty -e fish -c ya";
           "${mod}+Shift+Escape" = "exec alacritty -e btop";
           "${mod}+Shift+f" = "exec thunar";
           "${mod}+Shift+b" = "exec librewolf";

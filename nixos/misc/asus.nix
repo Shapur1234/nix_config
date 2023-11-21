@@ -1,7 +1,22 @@
-{ pkgs, ... }:
 {
-  # environment.systemPackages = with pkgs; [ asusctl ];
+  services.fwupd.enable = true;
 
+  services.thermald.enable = true;
+  auto-cpufreq = {
+    enable = true;
+    settings = {
+      battery = {
+        governor = "powersave";
+        turbo = "never";
+      };
+      charger = {
+        governor = "performance";
+        turbo = "auto";
+      };
+    };
+  };
+
+  # environment.systemPackages = with pkgs; [ asusctl ];
   services.supergfxd.enable = true;
   services.asusd = {
     enable = true;
