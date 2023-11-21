@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  environment.systemPackages = with pkgs; [ pulseaudio ];
+  environment.systemPackages = with pkgs; [ pamixer ];
 
   security.rtkit.enable = true;
   services.pipewire = {

@@ -42,11 +42,6 @@ in
             command = "wpctl set-default 54";
             notification = false;
           }
-          # {
-          #   command = "rog-control-center";
-          #   always = false;
-          #   notification = false;
-          # }
         ];
 
         fonts = {
@@ -163,8 +158,8 @@ in
           "${mod}+Shift+9" = "move container to workspace number 9";
           "${mod}+Shift+0" = "move container to workspace number 10";
 
-          "XF86AudioRaiseVolume" = "exec pactl set-sink-volume @DEFAULT_SINK@ +5%";
-          "XF86AudioLowerVolume" = "exec pactl set-sink-volume @DEFAULT_SINK@ -5%";
+          "XF86AudioRaiseVolume" = "exec pamixer -i 5";
+          "XF86AudioLowerVolume" = "exec pamixer -d 5";
           "XF86AudioMute" = "exec pactl set-sink-mute @DEFAULT_SINK@ toggle";
 
           "XF86MonBrightnessDown" = "exec brightnessctl -q set 10%-";
