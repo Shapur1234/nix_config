@@ -34,11 +34,6 @@ in
             notification = false;
           }
           {
-            command = "nm-applet";
-            always = true;
-            notification = false;
-          }
-          {
             command = "wpctl set-default 54";
             notification = false;
           }

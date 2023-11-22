@@ -13,10 +13,8 @@
     users.jirka = {
       directories = [
         "Documents"
-        "Music"
-        "Pictures"
         "Programming"
-        "Videos"
+        "Scripts"
         "nix_config"
 
         ".librewolf"
