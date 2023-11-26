@@ -37,6 +37,10 @@ in
             command = "wpctl set-default 54";
             notification = false;
           }
+          {
+            command = "brightnessctl s 100%";
+            notification = false;
+          }
         ];
 
         fonts = {
