@@ -35,7 +35,6 @@
 
     libreoffice
     pinta
-    popsicle
     speedcrunch
     vlc
   ];

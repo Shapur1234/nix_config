@@ -19,6 +19,8 @@
 
         ".librewolf"
         ".mozilla"
+
+        "invokeai"
       ];
       files = [ ];
     };
