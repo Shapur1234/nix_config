@@ -19,7 +19,8 @@ in
       config = {
         startup = [
           {
-            command = "xrandr --output DP-0.2 --primary --mode 2560x1440 --pos 1920x0 --rotate normal --output DP-0 --off --output DP-1 --off --output HDMI-0 --off --output DP-2 --off --output eDP-1-0 --mode 1920x1080 --pos 0x360 --rotate normal --output DisplayPort-1-1 --off --output DisplayPort-1-2 --off --output DisplayPort-1-3 --off --output DisplayPort-1-4 --off --output DisplayPort-1-5 --off --output DisplayPort-1-6 --off --output DisplayPort-1-7 --off --output DisplayPort-1-8 --off";
+            # command = "xrandr --output DP-0.2 --primary --mode 2560x1440 --pos 1920x0 --rotate normal --output DP-0 --off --output DP-1 --off --output HDMI-0 --off --output DP-2 --off --output eDP-1-0 --mode 1920x1080 --pos 0x360 --rotate normal --output DisplayPort-1-1 --off --output DisplayPort-1-2 --off --output DisplayPort-1-3 --off --output DisplayPort-1-4 --off --output DisplayPort-1-5 --off --output DisplayPort-1-6 --off --output DisplayPort-1-7 --off --output DisplayPort-1-8 --off";
+            command = "xrandr --output DP-0.1 --mode 1920x1080 --pos 4480x360 --rotate normal --output DP-0.2 --primary --mode 2560x1440 --pos 1920x0 --rotate normal --output DP-0 --off --output DP-1 --off --output HDMI-0 --off --output DP-2 --off --output eDP-1-0 --mode 1920x1080 --pos 0x360 --rotate normal --output DisplayPort-1-0 --off --output DisplayPort-1-1 --off --output DisplayPort-1-2 --off --output DisplayPort-1-3 --off --output DisplayPort-1-4 --off --output DisplayPort-1-5 --off --output DisplayPort-1-6 --off --output DisplayPort-1-7 --off";
             always = true;
             notification = false;
           }
