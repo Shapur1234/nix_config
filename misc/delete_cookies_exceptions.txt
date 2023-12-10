@@ -1,4 +1,6 @@
-github.com
-www.startpage.com
 discord.com
+github.com
+login.microsoftonline.com
 teams.microsoft.com
+www.notion.so
+www.startpage.com
