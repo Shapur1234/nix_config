@@ -26,10 +26,6 @@
 
     prime = {
       sync.enable = true;
-      # offload = {
-      #   enable = true;
-      #   enableOffloadCmd = true;
-      # };
 
       amdgpuBusId = "PCI:101:0:0";
       nvidiaBusId = "PCI:1:0:0";
