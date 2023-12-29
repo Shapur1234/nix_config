@@ -19,6 +19,7 @@
 
         ".librewolf"
         ".mozilla"
+        ".thunderbird"
 
         "invokeai"
       ];

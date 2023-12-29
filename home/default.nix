@@ -7,9 +7,9 @@
     ./app/git.nix
     ./app/gitui.nix
     ./app/helix.nix
-    # ./app/lf.nix
     ./app/librewolf.nix
     ./app/rofi.nix
+    ./app/thunderbird.nix
     ./app/yazi.nix
     ./misc/thunar.nix
     ./wm/gtk.nix
@@ -37,6 +37,7 @@
     pinta
     speedcrunch
     vlc
+    xarchiver
   ];
 
   home = {

@@ -168,10 +168,11 @@ in
 
           "${mod}+d" = "exec rofi -show drun";
           "${mod}+Return" = "exec alacritty";
-          "${mod}+Shift+E" = "exec alacritty -e fish -c ya";
+          "${mod}+Shift+e" = "exec alacritty -e fish -c ya";
           "${mod}+Shift+Escape" = "exec alacritty -e btop";
           "${mod}+Shift+f" = "exec thunar";
           "${mod}+Shift+b" = "exec librewolf";
+          "${mod}+Shift+m" = "exec thunderbird";
           "${mod}+Shift+d" = "exec librewolf -new-window https://discord.com/app";
           "${mod}+Shift+t" = "exec librewolf -new-window https://teams.microsoft.com";
 

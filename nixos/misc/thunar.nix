@@ -1,9 +1,5 @@
 { pkgs, ... }:
 {
-  environment.systemPackages = with pkgs; [
-    xarchiver
-  ];
-
   services = {
     gvfs.enable = true;
     tumbler.enable = true;
