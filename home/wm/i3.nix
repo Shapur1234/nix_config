@@ -161,7 +161,7 @@ in
 
           "XF86AudioRaiseVolume" = "exec pamixer -i 5";
           "XF86AudioLowerVolume" = "exec pamixer -d 5";
-          "XF86AudioMute" = "exec pactl set-sink-mute @DEFAULT_SINK@ toggle";
+          "XF86AudioMute" = "exec pamixer --toggle-mute";
 
           "XF86MonBrightnessDown" = "exec brightnessctl -q set 10%-";
           "XF86MonBrightnessUp" = "exec brightnessctl -q set +10%";
