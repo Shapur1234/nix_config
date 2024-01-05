@@ -20,6 +20,7 @@
         ".librewolf"
         ".mozilla"
         ".thunderbird"
+        ".config/chromium"
 
         "invokeai"
       ];

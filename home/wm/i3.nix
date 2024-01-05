@@ -43,6 +43,11 @@ in
             command = "brightnessctl s 100%";
             notification = false;
           }
+          {
+            command = "update-mime-database ~/.local/share/mime";
+            always = true;
+            notification = false;
+          }
         ];
 
         fonts = {

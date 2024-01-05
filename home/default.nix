@@ -3,6 +3,7 @@
   imports = [
     ./app/alacritty.nix
     ./app/btop.nix
+    ./app/chromium.nix
     ./app/fish.nix
     ./app/git.nix
     ./app/gitui.nix
@@ -31,6 +32,7 @@
     rustc
     python3
 
+    sfz
     neofetch
 
     libreoffice
@@ -40,10 +42,20 @@
     xarchiver
   ];
 
+
+  xdg.mimeApps.defaultApplications = {
+    "text/html" = "librewolf.desktop";
+    "x-scheme-handler/http" = "librewolf.desktop";
+    "x-scheme-handler/https" = "librewolf.desktop";
+    "x-scheme-handler/about" = "librewolf.desktop";
+    "x-scheme-handler/unknown" = "librewolf.desktop";
+  };
+
   home = {
     file = {
       ".background-image".source = ../misc/wallpaper.png;
-      ".mime.types".source = "../misc/mime.types";
+      ".mime.types".source = ../misc/mime.types;
+      ".local/share/mime/packages/text-markdown.xml".source = ../misc/text-markdown.xml;
       ".config/SpeedCrunch/SpeedCrunch.ini".source = ../misc/SpeedCrunch.ini;
       ".config/rog/rog-control-center.cfg".source = ../misc/rog-control-center.cfg;
     };
