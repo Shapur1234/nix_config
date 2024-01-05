@@ -42,17 +42,10 @@
 
   home = {
     file = {
-      ".background-image" = {
-        source = ../misc/wallpaper.png;
-      };
-
-      ".config/SpeedCrunch/SpeedCrunch.ini" = {
-        source = ../misc/SpeedCrunch.ini;
-      };
-
-      ".config/rog/rog-control-center.cfg" = {
-        source = ../misc/rog-control-center.cfg;
-      };
+      ".background-image".source = ../misc/wallpaper.png;
+      ".mime.types".source = "../misc/mime.types";
+      ".config/SpeedCrunch/SpeedCrunch.ini".source = ../misc/SpeedCrunch.ini;
+      ".config/rog/rog-control-center.cfg".source = ../misc/rog-control-center.cfg;
     };
   };
 }
