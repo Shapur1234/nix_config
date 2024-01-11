@@ -1,7 +1,5 @@
 {
-  home.sessionVariables = {
-    TERM = "alacritty";
-  };
+  home.sessionVariables.TERM = "alacritty";
 
   programs.alacritty = {
     enable = true;

@@ -49,25 +49,5 @@
     git.enable = true;
     fish.enable = true;
     dconf.enable = true;
-
-
-    chromium = {
-      enable = true;
-      extensions = [
-        "cjpalhdlnbpafiamejdnhcphjbkeiagm" # uBlock Origin
-        "ckkdlimhmcjmikdlpkmbgfkaikojcbjk" # Markdown Viewer
-      ];
-      extraOpts = {
-        "BrowserSignin" = 0;
-        "SyncDisabled" = true;
-        "PasswordManagerEnabled" = false;
-        "BuiltInDnsClientEnabled" = false;
-        "MetricsReportingEnabled" = false;
-        "SpellcheckEnabled" = true;
-        "SpellcheckLanguage" = [
-          "en-US"
-        ];
-      };
-    };
   };
 }

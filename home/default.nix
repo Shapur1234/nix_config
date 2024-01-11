@@ -22,7 +22,17 @@
     username = "jirka";
     homeDirectory = "/home/jirka";
     stateVersion = "23.11";
+
+
+    file = {
+      ".background-image".source = ../misc/wallpaper.png;
+      ".mime.types".source = ../misc/mime.types;
+      ".local/share/mime/packages/text-markdown.xml".source = ../misc/text-markdown.xml;
+      ".config/SpeedCrunch/SpeedCrunch.ini".source = ../misc/SpeedCrunch.ini;
+      ".config/rog/rog-control-center.cfg".source = ../misc/rog-control-center.cfg;
+    };
   };
+
   programs.home-manager.enable = true;
 
   services.network-manager-applet.enable = true;
@@ -41,23 +51,4 @@
     vlc
     xarchiver
   ];
-
-
-  xdg.mimeApps.defaultApplications = {
-    "text/html" = "librewolf.desktop";
-    "x-scheme-handler/http" = "librewolf.desktop";
-    "x-scheme-handler/https" = "librewolf.desktop";
-    "x-scheme-handler/about" = "librewolf.desktop";
-    "x-scheme-handler/unknown" = "librewolf.desktop";
-  };
-
-  home = {
-    file = {
-      ".background-image".source = ../misc/wallpaper.png;
-      ".mime.types".source = ../misc/mime.types;
-      ".local/share/mime/packages/text-markdown.xml".source = ../misc/text-markdown.xml;
-      ".config/SpeedCrunch/SpeedCrunch.ini".source = ../misc/SpeedCrunch.ini;
-      ".config/rog/rog-control-center.cfg".source = ../misc/rog-control-center.cfg;
-    };
-  };
 }
