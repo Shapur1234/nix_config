@@ -1,6 +1,5 @@
-{ pkgs, ... }:
 {
-  home.sessionVariables.DEFAULT_BROWSER = "librewolf";
+  home.sessionVariables.BROWSER = "librewolf";
 
   programs.librewolf = {
     enable = true;
