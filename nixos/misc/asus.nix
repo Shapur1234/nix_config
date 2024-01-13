@@ -18,7 +18,6 @@
     };
   };
 
-  # environment.systemPackages = with pkgs; [ asusctl ];
   services.supergfxd.enable = true;
   services.asusd = {
     enable = true;
@@ -38,9 +37,4 @@
           active_profile: Performance,
       )'';
   };
-
-  # programs.rog-control-center = {
-  #   enable = true;
-  #   autoStart = true;
-  # };
 }

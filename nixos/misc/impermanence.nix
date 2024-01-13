@@ -13,16 +13,14 @@
     users.jirka = {
       directories = [
         "Documents"
-        "Programming"
-        "Scripts"
+        "src"
+        "script"
         "nix_config"
 
         ".librewolf"
         ".mozilla"
         ".thunderbird"
         ".config/chromium"
-
-        "invokeai"
       ];
       files = [ ];
     };

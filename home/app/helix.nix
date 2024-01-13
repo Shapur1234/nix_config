@@ -23,16 +23,20 @@
 
     defaultEditor = true;
 
-    settings =
-      {
-        theme = "gruvbox";
+    settings = {
+      theme = "gruvbox";
 
-        editor = {
-          line-number = "relative";
-        };
+      editor = {
+        line-number = "relative";
       };
+    };
 
     languages = {
+      language-server.pyright = with pkgs.nodePackages; {
+        command = "${pyright}/bin/pyright-langserver";
+        args = [ "--stdio" ];
+      };
+
       language = [
         {
           name = "bash";
@@ -73,7 +77,6 @@
           name = "python";
           auto-format = true;
           formatter = { command = "${pkgs.black}/bin/black"; args = [ "--quiet" "-" ]; };
-          #   language-server = { command = "pyright-langserver"; args = [ "--stdio" ]; };
         }
         {
           name = "typescript";

@@ -23,13 +23,9 @@
     homeDirectory = "/home/jirka";
     stateVersion = "23.11";
 
-
     file = {
       ".background-image".source = ../misc/wallpaper.png;
-      ".mime.types".source = ../misc/mime.types;
-      ".local/share/mime/packages/text-markdown.xml".source = ../misc/text-markdown.xml;
       ".config/SpeedCrunch/SpeedCrunch.ini".source = ../misc/SpeedCrunch.ini;
-      ".config/rog/rog-control-center.cfg".source = ../misc/rog-control-center.cfg;
     };
   };
 
