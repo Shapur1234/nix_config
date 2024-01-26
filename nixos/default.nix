@@ -1,21 +1,20 @@
 { pkgs, ... }:
 {
-  imports =
-    [
-      ./hardware-configuration.nix
-      ./misc/asus.nix
-      ./misc/audio.nix
-      ./misc/boot.nix
-      ./misc/impermanence.nix
-      ./misc/locale.nix
-      ./misc/network.nix
-      ./misc/nvidia.nix
-      ./misc/polkit.nix
-      ./misc/printer.nix
-      ./misc/thunar.nix
-      ./misc/users.nix
-      ./misc/x11.nix
-    ];
+  imports = [
+    ./hardware-configuration.nix
+    ./misc/asus.nix
+    ./misc/audio.nix
+    ./misc/boot.nix
+    ./misc/impermanence.nix
+    ./misc/locale.nix
+    ./misc/network.nix
+    ./misc/nvidia.nix
+    ./misc/polkit.nix
+    ./misc/printer.nix
+    ./misc/thunar.nix
+    ./misc/users.nix
+    ./misc/x11.nix
+  ];
 
   nix.settings = {
     experimental-features = [ "nix-command" "flakes" ];

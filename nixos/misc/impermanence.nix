@@ -21,6 +21,8 @@
         ".mozilla"
         ".thunderbird"
         ".config/chromium"
+
+        ".cargo"
       ];
       files = [ ];
     };
