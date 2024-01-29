@@ -13,7 +13,7 @@
     ./misc/printer.nix
     ./misc/thunar.nix
     ./misc/users.nix
-    ./misc/virtualisation.nix
+    # ./misc/virtualisation.nix
     ./misc/x11.nix
   ];
 
