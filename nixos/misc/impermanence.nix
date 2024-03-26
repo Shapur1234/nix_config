@@ -16,7 +16,6 @@
         "src"
         "script"
         "nix_config"
-        "VirtualBox VMs"
 
         ".librewolf"
         ".mozilla"

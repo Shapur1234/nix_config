@@ -41,6 +41,7 @@
     sfz
     neofetch
 
+    gparted
     libreoffice
     pinta
     speedcrunch

@@ -21,6 +21,7 @@ in
           {
             # command = "xrandr --output DP-0.1 --primary --mode 1920x1080 --pos 4480x360 --rotate normal --output DP-0.2 --mode 2560x1440 --pos 1920x0 --rotate normal --output DP-0 --off --output DP-1 --off --output HDMI-0 --off --output DP-2 --off --output eDP-1-0 --mode 1920x1080 --pos 0x360 --rotate normal --output DisplayPort-1-1 --off --output DisplayPort-1-2 --off --output DisplayPort-1-3 --off --output DisplayPort-1-4 --off --output DisplayPort-1-5 --off --output DisplayPort-1-6 --off --output DisplayPort-1-7 --off --output DisplayPort-1-8 --off";
             command = "xrandr --output DP-0.2 --mode 2560x1440 --pos 1920x0 --rotate normal --output DP-0 --off --output DP-1 --off --output HDMI-0 --off --output DP-2 --off --output eDP-1-1 --mode 1920x1080 --pos 0x360 --rotate normal --output DisplayPort-1-2 --off --output DisplayPort-1-3 --off --output DisplayPort-1-4 --off --output DisplayPort-1-5 --off --output DisplayPort-1-6 --off --output DisplayPort-1-7 --off --output DisplayPort-1-8 --off --output DisplayPort-1-9 --off";
+            # command = "xrandr --output DP-0 --off --output DP-1 --off --output HDMI-0 --off --output DP-2 --off --output eDP-1-1 --mode 1920x1080 --pos 0x360 --rotate normal --output DisplayPort-1-1 --off --output DisplayPort-1-2 --off --output DisplayPort-1-3 --off --output DisplayPort-1-4 --off --output DisplayPort-1-5 --off --output DisplayPort-1-6 --off --output DisplayPort-1-7 --off --output DisplayPort-1-8 --off --output DisplayPort-1-9 --off --output DisplayPort-1-10 --primary --mode 2560x1440 --pos 1920x0 --rotate normal --output DisplayPort-1-11 --off";
             always = true;
             notification = false;
           }
@@ -179,7 +180,7 @@ in
           "${mod}+Shift+m" = "exec thunderbird";
           "${mod}+Shift+d" = "exec librewolf -new-window https://discord.com/app";
           "${mod}+Shift+t" = "exec librewolf -new-window https://teams.microsoft.com";
-
+          "${mod}+Shift+p" = "exec chromium ~/Documents/Maturita-2024/README.md";
 
           "Print" = "exec gnome-screenshot -w";
         };
@@ -195,6 +196,18 @@ in
       #   workspace "8" output DP-0.2
       #   workspace "9" output DP-0.2
       #   workspace "10" output DP-0.2
+      # '';
+      # extraConfig = ''
+      #   workspace "1" output eDP-1-1
+      #   workspace "2" output eDP-1-1
+      #   workspace "3" output eDP-1-1
+      #   workspace "4" output eDP-1-1
+      #   workspace "5" output eDP-1-1
+      #   workspace "6" output DisplayPort-1-10
+      #   workspace "7" output DisplayPort-1-10
+      #   workspace "8" output DisplayPort-1-10
+      #   workspace "9" output DisplayPort-1-10
+      #   workspace "10" output DisplayPort-1-10
       # '';
       extraConfig = ''
         workspace "1" output eDP-1-1
